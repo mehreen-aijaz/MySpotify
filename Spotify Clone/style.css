@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&family=Varela+Round&display=swap");
+
+body {
+  background-color: antiquewhite;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  font-family: "Ubuntu", sans-serif;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  height: 65px;
+  background-color: black;
+  color: white;
+}
+nav ul li {
+  padding: 0 12px;
+}
+.brand img {
+  width: 44px;
+  padding: 0 8px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+/* bottom */
+.container {
+  min-height: 60vh;
+  background-color: black;
+  color: white;
+  font-family: "Verela Round", sans-serif;
+  display: flex;
+  width: 70%;
+  margin: 23px auto;
+  border-radius: 12px;
+  padding: 34px;
+  background-image: url(images/bgImage.jpg);
+}
+.bottom {
+  position: sticky;
+  height: 130px;
+  background-color: black;
+  color: white;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin: 12px 0; */
+}
+.icons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around; /* Distributes the buttons evenly */
+  align-items: center;
+}
+.icons i {
+  cursor: pointer;
+  font-size: 3rem;
+}
+#myProgressBar {
+  width: 80vw;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+.songItem {
+  height: 45px;
+  display: flex;
+  background-color: white;
+  color: black;
+  /* width: 80%; */
+  margin: 16px 0;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 34px;
+}
+.songName {
+  white-space: nowrap;
+  overflow: hidden; /* Hide any overflowed text */
+  text-overflow: ellipsis;
+  flex-grow: 1;
+}
+
+.songItem img {
+  width: 43px;
+  margin: 0 23px;
+  border-radius: 34px;
+}
+
+.songItemConatiner {
+  margin-top: 30 px;
+}
+
+.songItemInfo {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  left: 10vw;
+  font-family: "Verela Round", sans-serif;
+}
+
+.songItemInfo img {
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
+}
+
+.timeStamp {
+  margin: 0 23px;
+}
+.timeStamp i {
+  cursor: pointer;
+}
+@media only screen and (max-width: 500px) {
+  body {
+    background-color: lightblue;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .icons i {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .icons {
+    flex-direction: row;
+  }
+}
